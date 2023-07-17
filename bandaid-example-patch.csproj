@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>bandaid-example-patch</AssemblyName>
+    <RootNamespace>ExamplePatch</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>11</LangVersion>
+    <NoWarn>1701;1702;1591;</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <InternalsAssemblyUseEmptyMethodBodies>false</InternalsAssemblyUseEmptyMethodBodies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Analyzer Include="ref/Sandbox.Generator.dll"/>
+    <Reference Include="ref/Sandbox.System.dll" />
+    <Reference Include="ref/Sandbox.Engine.dll" />
+    <Reference Include="ref/Sandbox.Event.dll" />
+    <Reference Include="ref/Sandbox.Bind.dll" />
+    <Reference Include="ref/Sandbox.Reflection.dll" />
+    <Reference Include="ref/Sandbox.Tools.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.3.0-prerelease.2" />
+  </ItemGroup>
+
+</Project>
