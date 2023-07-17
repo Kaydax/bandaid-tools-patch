@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyName>bandaid-example-patch</AssemblyName>
-    <RootNamespace>ExamplePatch</RootNamespace>
+    <AssemblyName>bandaid-tools-patches</AssemblyName>
+    <RootNamespace>BandaidPatch</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>11</LangVersion>
     <NoWarn>1701;1702;1591;</NoWarn>
